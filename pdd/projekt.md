@@ -88,6 +88,12 @@ Fragen
 
 ```
 BCD
+├── pdd
+│   ├── projekt.md
+│   └── _quarto.yml
+├── styleguide
+│   ├── styleguide.md
+│   └── _quarto.yml
 ├── voraussetzungen
 │   ├── baustein-1
 │   ├── baustein-2
@@ -114,22 +120,29 @@ Funktioniert gut, wenn es nur Skript und Übungsaufgaben gibt, für BCD wahrsche
 
 ```
 BCD
-├── baustein-1
-│   ├── 01-voraussetzungen.qmd
-│   ├── 02-lernziele.qmd
-│   ├── 03-unterlagen
-│   │   ├── 00-bilder
+├── pdd
+│   ├── projekt.md
+│   └── _quarto.yml
+├── styleguide
+│   ├── styleguide.md
+│   └── _quarto.yml
+├── bausteine
+│   ├── baustein-1
+│   │   ├── 01-voraussetzungen.qmd
+│   │   ├── 02-lernziele.qmd
+│   │   ├── 03-unterlagen
+│   │   │   ├── 00-bilder
+│   │   │   │   └── ...
+│   │   │   └── skript.qmd
+│   │   ├── 04-aufgaben
+│   │   │   ├── 00-bilder
+│   │   │   │   └── ...
+│   │   │   ├── aaa.qmd
+│   │   │   ├── bbb.qmd
 │   │   │   └── ...
-│   │   └── skript.qmd
-│   ├── 04-aufgaben
-│   │   ├── 00-bilder
-│   │   │   └── ...
-│   │   ├── aaa.qmd
-│   │   ├── bbb.qmd
-│   │   └── ...
-├── baustein-2
-│   ├── ...
-├── _quarto.yml
+│   ├── baustein-2
+│   │   ├── ...
+│   └── _quarto.yml
 └── .gitignore
 ```
 
@@ -148,6 +161,48 @@ Fragen
   - Vorangestellte Ziffern für Sortierung?
 
   - Minus oder Unterstrich zur Abtrennung?
+
+#### Eigener GitHub-Account, mehrere Repositories, Gliederung nach Bausteinen
+
+Beide Varianten oben gehen von einem Repository für BCD aus. Eine Alternative wäre ein `bausteine-computergestuetzter-datenanalyse` - Account auf GitHub mit mehreren Repositories.
+
+Beispiel: Corona-Warn-App (https://github.com/corona-warn-app).
+
+```
+bausteine-computergestuetzter-datenanalyse
+├── bcd-dokumentation
+│   ├── .github
+│   │   └── workflows
+    │       └── ...
+│   ├── projekt.md
+│   └── _quarto.yml
+├── bcd-styleguide
+│   ├── .github
+│   │   └── workflows
+    │       └── ...
+│   ├── styleguide.md
+│   └── _quarto.yml
+└── bcd-bausteine
+    ├── .github
+    │   └── workflows
+    │       └── ...
+    ├── baustein-1
+    │   ├── 01-voraussetzungen.qmd
+    │   ├── 02-lernziele.qmd
+    │   ├── 03-unterlagen
+    │   │   ├── 00-bilder
+    │   │   │   └── ...
+    │   │   └── skript.qmd
+    │   ├── 04-aufgaben
+    │   │   ├── 00-bilder
+    │   │   │   └── ...
+    │   │   ├── aaa.qmd
+    │   │   ├── bbb.qmd
+    │   │   └── ...
+    ├── baustein-2
+    │   └── ...
+    └── _quarto.yml
+```
 
 ### Zusammenstellung von Materialien für einen bestimmten Kurs
 
