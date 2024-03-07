@@ -67,7 +67,7 @@ Anmerkungen
 
 Namenskonventionen für Files und Verzeichnisse
 
-- Alles klein geschrieben
+- Alles klein geschrieben (ausser README.md)
 
 - Keine Leerzeichen und Umlaute
 
