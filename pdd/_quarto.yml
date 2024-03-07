@@ -1,0 +1,24 @@
+project:
+  type: book
+
+book:
+  title: "Bausteine computergestützter Datenanalyse"
+  subtitle: "Dokumentation"
+  author:
+  - name: Lukas Arnold
+  - name: Simone Arnold
+  - name: Florian Bagemihl 
+  - name: Matthias Baitsch 
+  - name: Sebastian Seipel
+  chapters: 
+    - index.md
+    - anwendungsfaelle.md
+    - bausteine.md
+    - organisation.md
+
+format:
+  html: default
+  pdf: default
+
+execute:
+  freeze: auto
